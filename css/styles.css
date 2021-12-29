@@ -596,6 +596,38 @@ textarea{
       max-width: 700px;
     }
     }
+/* start of background image amination */
+    html, body {
+      height: 100%;
+      margin: 0;
+  }
+  .outer {
+      height:100%;
+      overflow: hidden;
+  }
+  .inner {
+      height:200%;
+      width:100%;
+      -webkit-animation:mymove 5s linear infinite;
+      /* Safari and Chrome */
+      animation:mymove 5s linear infinite;
+      background-image: url(../img/background_image.jpg);
+      background-size: 100% 50%;
 
-
-    
+  @-webkit-keyframes mymove {
+      from {
+          background-position: 0% 0%;
+      }
+      to {
+          background-position: 0% -100%;
+      }
+  }
+  @keyframes mymove {
+      from {
+          background-position: 0% 0%;
+      }
+      to {
+          background-position: 0% -100%;
+      }
+  }
+  }

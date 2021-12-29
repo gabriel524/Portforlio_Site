@@ -48,6 +48,11 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   /* Sets the line-height to 1.6 */
+  background-image: url(../img/background_image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 main {

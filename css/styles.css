@@ -54,6 +54,20 @@ body {
   background-size: cover;
   height: 100vh;
 }
+body{ margin: 0px; background: none}
+#banner{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  overflow: hidden;
+  background: url(../img/background_image.jpg) repeat;
+  animation: background_image linear 15s infinite;
+}
+@keyframes background_image {
+  from {background-position: 0px;}
+  to {background-position: -300px;}
+
+}
 
 main {
   flex: 1;

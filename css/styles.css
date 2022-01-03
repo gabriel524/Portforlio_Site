@@ -53,15 +53,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  margin: 0px;
 }
-body{ margin: 0px; background: none}
 #banner{
   width: 100%;
   height: auto;
   margin: 0px auto;
   overflow: hidden;
-  background: url(../img/background_image.jpg) repeat;
-  animation: background_image linear 15s infinite;
+  background: url(../img/background_image.jpg);
+  animation: background_image linear 5s infinite;
 }
 @keyframes background_image {
   from {background-position: 0px;}
@@ -127,7 +127,7 @@ a:active {
 
 }
 .page-header__logo {
-  width: 150px
+  width: 100px
 }
 .page-header__item{
   float: left;
@@ -231,11 +231,20 @@ a.button {
 }
 .profile__portrait {
   float: left;
-  width: 100%;
-  max-width: 250px;
   height: auto;
   margin-right: 40px;
   border-radius: 50%;
+  margin-top: 40px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.profile > img {
+  width: 100%;
 }
 .social-media__item {
   transition: transform 0.5s;
@@ -243,15 +252,6 @@ a.button {
 
 .social-media__item:hover {
   transform: scale(1.2);
-}
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column
-}
-.profile > img {
-  width: 180px
 }
 
   /*End of profile styling*/
@@ -262,17 +262,12 @@ a.button {
   min-height: calc(100vh - 80px);
 }
 
-.profile {
-  min-width: 360px;
-  width: 80px;
-  max-width: 700px;
-  margin: 0 auto;
-  }
     /* end of the styling of content where all the header is wrapped into a single div tag/element*/
 
 .page-footer {
   clear: both;
   display: flex;
+  margin-top: 30px;
   flex-direction: column;
   align-items: center;
   background-color: var(--footer-color);
@@ -377,7 +372,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
   max-width: 700px;
   /*end of all forms styling*/

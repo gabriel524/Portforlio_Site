@@ -6,66 +6,72 @@
   <title>Gabriel - Web Portfolio</title>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="description" content="Gabriel Singbeh is a full Stack web developer who specializes in xyz.">
   <meta name="keywords" content="Gabriel A. Singbeh, Full Stack Web Developer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <div Id="banner">
-  <div class="content">
-    <!-- This section contains the logo and the main navigation -->
-    <header class="page-header">
-      <div>
-        <!--personal logo -->
-        <a href="index.html">
-         <img src="img/Gabriel-Singbeh-logo.jpg" alt="logo" class="page-header__logo">
-        </a>
+    <div class="content">
+      <!-- This section contains the logo and the main navigation -->
+      <header class="page-header">
+        <div>
+          <!--personal logo -->
+          <a href="index.html">
+            <img src="img/Gabriel-Singbeh-logo.jpg" alt="logo" class="page-header__logo">
+          </a>
+        </div>
+        <nav class="main-navigation page-header__item">
+          <!-- <ul role="menubar"-->
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item  navigation-list__item--active">HOME</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT ME</a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="profile">
+        <div>
+          <img src="img/Gabriel_singbeh.jpg" class="profile__portrait" alt="Gabriel Abraham Singbeh portrait">
+        </div>
+        <div>
+          <h1>Hi There!</h1>
+          <p>
+            My name is Gabriel Abraham Singbeh. I am a <span class="p__highlight"> web</span> developer from Italy.
+          </p>
+          <a href="https://github.com/gabriel524" target="_blank">Check out some of my code</a>
+        </div>
       </div>
-      <nav class="main-navigation page-header__item">
-        <!-- <ul role="menubar"-->
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item  navigation-list__item--active">HOME</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT ME</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="profile">
-      <img src="img/Gabriel_singbeh.jpg" class="profile__portrait" alt="Gabriel Abraham Singbeh portrait">
-      <h1>Hi There!</h1>
-      <p>
-        My name is Gabriel Abraham Singbeh. I am a <span class="p__highlight"> web</span> developer from Italy.
-      </p>
-      <a href="https://github.com/gabriel524" target="_blank">Check out some of my code</a>
+    </div>
   </div>
-  </div>
-</div>
-    <footer class="page-footer">
-     <p class="p__italic"> Find me on</P>
+  <footer class="page-footer">
+    <p class="p__italic"> Find me on</P>
     <div class="social-media">
       <!-- Github logo -->
-      <a href="https://github.com/gabriel524" target="_blank">
-        <img src="img/github_icon.svg" alt="Github" class="social-media__item">
-        <!-- Tweitter logo-->
-        <a href="https://twitter.com/abrahamsingbehg" target="_blank">
-          <img src="img/twitter_icon.svg" alt="Twitter" class="social-media__item">
-          <!-- LinkedIn logo -->
-        <a href="https://www.linkedin.com/in/gabriel1924" target="_blank">
-          <img src="img/linkedin_icon.svg" alt="LinkedIn" class="social-media__item">
-      </div>
-    </footer>
-   <script src="js/tota11y.min.js"></script>
-  </div>
+      <a href="https://github.com/gabriel524" target="_blank"></a>
+      <img src="img/github_icon.svg" alt="Github" class="social-media__item">
+      <!-- Tweitter logo-->
+      <a href="https://twitter.com/abrahamsingbehg" target="_blank"></a>
+      <img src="img/twitter_icon.svg" alt="Twitter" class="social-media__item">
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/gabriel1924" target="_blank"></a>
+      <img src="img/linkedin_icon.svg" alt="LinkedIn" class="social-media__item">
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
 </body>
+
 </html>

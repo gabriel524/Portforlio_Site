@@ -370,7 +370,10 @@ textarea {
   max-width: 700px;
   /*end of all forms styling*/
 }
-
+ .experience{
+   text-align: center;
+  
+ }
 /* #### END OF Responsive Design styling #### */
 /*working with grid styliing*/
 

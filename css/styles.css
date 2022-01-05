@@ -12,7 +12,7 @@ Secondary Color (Orange): #e0b354;
   --text-color:000;
   --background-color: #F8F8FF;
   --header-color: #4B0082;
-  --footer-color: #fff;
+  --footer-color:#fff;
   --link-color: #184a42;
   --link-color-visited: ##0000FF;
   --primary-font: 'Lato', sans-serif;
@@ -63,7 +63,7 @@ body {
   margin: 0px auto;
   overflow: hidden;
   background: url(../img/background.jpeg) repeat;
-  animation: background_image linear 5s infinite;
+  animation: background_image linear 15s infinite;
   background-size: cover;
 }
 @keyframes background_image {

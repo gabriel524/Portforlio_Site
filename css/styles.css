@@ -14,7 +14,7 @@ Secondary Color (Orange): #e0b354;
   --header-color: #4B0082;
   --footer-color:#fff;
   --link-color: #184a42;
-  --link-color-visited: ##0000FF;
+  --link-color-visited: #0000FF;
   --primary-font: 'Lato', sans-serif;
   --font-weight-light: 100;
   --font-weight-regular: 400;
@@ -286,12 +286,12 @@ a.button {
 }
 
 .project-list__item {
-    background-color: none;
-    padding: 20px;
+    padding: 10px;
     width: auto;
     min-height: auto;
     margin: 0;
-}
+  }
+
 
 /* this is the beggining of styling of all forms*/
 .form-container{
@@ -372,7 +372,7 @@ textarea {
 }
  .experience{
    text-align: center;
-  
+
  }
 /* #### END OF Responsive Design styling #### */
 /*working with grid styliing*/

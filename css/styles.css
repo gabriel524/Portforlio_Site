@@ -66,11 +66,6 @@ body {
   animation: background_image linear 10s infinite;
   background-size: cover;
 }
-@keyframes background_image {
-  from {background-position: 0px;}
-  to {background-position: -300px;}
-
-}
 
 main {
   flex: 1;
@@ -260,7 +255,6 @@ a.button {
 .page-footer {
   clear: both;
   display: flex;
-  margin-top: 30px;
   flex-direction: column;
   align-items: center;
   background-color: var(--footer-color);
@@ -416,6 +410,22 @@ textarea {
   max-width: 700px;
 /* And the grid fallback ends here */
 }
+
+/*styling table for work experince and*/
+th, td {
+  margin:10px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+.skills-table__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @supports (display: grid) {
 .grid {
   display: grid;
@@ -497,6 +507,10 @@ textarea {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /* End of Berlin animation styling*/
+@keyframes background_image {
+  from {background-position: 0px;}
+  to {background-position: -300px;}
+}
 
 .article {
   max-width: 700px;
@@ -504,23 +518,8 @@ textarea {
   text-align:center;
   list-style-type: none;
 }
-/*styling table for work experince and*/
-th, td {
-  margin:10px;
-  padding: 10px;
-  border: 1px solid blue;
-}
 
-.skills-table__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-  /*here we use media queries for different sizes of screens */
-    /* #### START OF Responsive Design styling #### */
-  /* shared code */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .profile__portrait {
@@ -538,5 +537,4 @@ th, td {
     grid-gap: 10px;
     margin: 0;
   }
-}
 }

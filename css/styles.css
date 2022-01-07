@@ -198,29 +198,22 @@ a:active {
 
 /* #### START OF Button styling #### */
 button, .button {
-  /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--secondary-color);
   color: var(--link-color);
   font-weight: var(--font-weight-regular);
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   margin: 5px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
@@ -244,13 +237,11 @@ a.button {
 }
   /*End of profile styling*/
 
-/* Start of the styling of content where all the header is wrapped into a single div tag/element*/
-
+/* styling of content where all the header is wrapped into a single div tag/element*/
 .content{
   min-height: calc(100vh - 80px);
 }
 
-    /* end of the styling of content where all the header is wrapped into a single div tag/element*/
 
 .page-footer {
   clear: both;
@@ -267,7 +258,7 @@ a.button {
 .p__highlight {
   color:var(--secondary-color);
   font-weight: var(--font-weight-regular);
-  /*end of text style for the social media links*/
+
 }
 /* #### START OF Project List styling #### */
 @supports (display: grid) {

@@ -85,7 +85,6 @@ a {
 }
   /* END OF Text styling */
 a:visited {
-  /* visited link */
   color: blue;
 }
 
@@ -187,13 +186,28 @@ a:active {
   transform: translateY(0px);
 
 }
+/*styleing profile*/
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.profile__portrait {
+  float: left;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+  margin-top: 40px;
+  padding: 20px;
+}
 
 /* #### START OF Button styling #### */
 button, .button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--secondary-color);
   color: var(--link-color);
   font-weight: var(--font-weight-regular);
@@ -207,34 +221,27 @@ button, .button {
 
 button:hover, button:focus, .button:hover, .button:focus {
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  border-color:var(--font-hover-color);
-  color:var(--font-hover-color);
 }
 
 a.button {
   color: var(--link-color-);
 }
 
-.Button {
-  background: 0 0 #fff;
-  border:1px solid #aaa;
-  border-radius:3px;
-  color:var(--font-color);
-  text-transform:uppercase;
-}
 textarea {
   resize:none;
 }
+/* end of button styling */
 
-.profile {
+/* page footer styling */
+.page-footer {
+  clear: both;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  margin: 0 auto;
+  background-color: var(--footer-color);
 }
+/* styling social media */
 .social-media__item {
   transition: transform 0.5s;
 }
@@ -242,19 +249,9 @@ textarea {
 .social-media__item:hover {
   transform: scale(1.2);
 }
-  /*End of profile styling*/
 
 .content{
   min-height: calc(100vh - 80px);
-}
-
-/*page fotter styling*/
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--footer-color);
 }
 /* text styly for the social media links*/
 .p__italic {
@@ -348,15 +345,6 @@ textarea {
 .grid__item {
   display: inline-block;
   width: 33%;
-  padding: 20px;
-}
-
-.profile__portrait {
-  float: left;
-  height: auto;
-  margin-right: 40px;
-  border-radius: 50%;
-  margin-top: 40px;
   padding: 20px;
 }
 
@@ -464,7 +452,6 @@ th, td {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-
 /* End of Berlin animation styling*/
 }
 
@@ -482,12 +469,15 @@ th, td {
     margin: 20px;
   }
 
+
 .grid__item {
   background-color: #f5efef;
   width: auto;
   min-height: auto;
   margin: 0;
   }
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

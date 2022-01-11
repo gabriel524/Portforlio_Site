@@ -1,5 +1,5 @@
 /*
-Colors used
+colors used
 
 Text Color (Dark Gray): #2b2b2b;
 Primary Color (Purple): #357b70;
@@ -245,22 +245,9 @@ textarea {
 .social-media__item {
   transition: transform 0.5s;
 }
+
 .social-media__item:hover {
   transform: scale(1.2);
-}
-  /*End of profile styling*/
-
-/* styling of content where all the header is wrapped into a single div tag/element*/
-.content{
-  min-height: calc(100vh - 80px);
-}
-
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--footer-color);
 }
 
 .content{
@@ -274,6 +261,7 @@ textarea {
 .p__highlight {
   color:var(--secondary-color);
   font-weight: var(--font-weight-regular);
+
 }
 /* #### START OF Project List styling #### */
 @supports (display: grid) {
@@ -369,7 +357,7 @@ textarea {
   padding: 20px;
 }
 
-.about-picture {
+#about-picture{
   width: 600px;
 }
 

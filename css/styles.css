@@ -408,13 +408,7 @@ nav{
   height: 80px;
   width: 100%;
 }
-label.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
+
 nav ul{
   float: right;
   margin-right: 20px;
@@ -478,10 +472,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
-    background: none;
-    color: #0082e6;
-  }
+  
   #check:checked ~ ul{
     left: 0;
   }
@@ -597,7 +588,4 @@ a.active,a:hover{
     margin: 0;
   }
 }
-
-
-
-
+}

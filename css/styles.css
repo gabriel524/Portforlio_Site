@@ -9,7 +9,7 @@ Secondary Color (Orange): #e0b354;
   --primary-color: #357b70;
   --secondary-color: #FFA500;
   --dark-grey: #2b2b2b;
-  --text-color:000;
+  --text-color:#000;
   --background-color: #F8F8FF;
   --header-color: #4B0082;
   --footer-color:#fff;
@@ -116,7 +116,7 @@ a:active {
 
 }
 .page-header__logo {
-  width: 100px
+  width: 76px
 }
 .page-header__item{
   float: left;
@@ -243,11 +243,11 @@ textarea {
 }
 /* styling social media */
 .social-media__item {
-  transition: transform 0.5s;
+  /*transition: transform 0.5s;*/
 }
 
 .social-media__item:hover {
-  transform: scale(1.2);
+  /*transform: scale(1.2);*/
 }
 
 .content{
@@ -396,6 +396,12 @@ th, td {
   list-style-type: none;
 }
 
+
+
+
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -471,12 +477,19 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 20px;
-  }
-  
+
   #check:checked ~ ul{
     left: 0;
   }
 }
+
+
+
+
+
+
+
+
 
 
   /* beggining of Berlin animation styling*/

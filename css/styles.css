@@ -243,11 +243,11 @@ textarea {
 }
 /* styling social media */
 .social-media__item {
-  /*transition: transform 0.5s;*/
+  transition: transform 0.5s;
 }
 
 .social-media__item:hover {
-  /*transform: scale(1.2);*/
+  transform: scale(1.2);
 }
 
 .content{
@@ -396,12 +396,6 @@ th, td {
   list-style-type: none;
 }
 
-
-
-
-
-
-
 *{
   padding: 0;
   margin: 0;
@@ -482,15 +476,6 @@ a.active,a:hover{
     left: 0;
   }
 }
-
-
-
-
-
-
-
-
-
 
   /* beggining of Berlin animation styling*/
 .sun {

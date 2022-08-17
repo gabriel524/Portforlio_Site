@@ -13,55 +13,57 @@
 <meta name="keywords" content="Gabriel A. Singbeh, Full Stack Web Developer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<div Id="banner">
-<div class="content">
-  <!-- This section contains the logo and the main navigation -->
-  <header class="page-header">
-    <div>
-      <!--personal logo -->
-      <a href="index.html">
-        <img src="img/Gabriel-Singbeh-logo.jpg" alt="logo" class="page-header__logo">
-      </a>
+<body >
+  <div class='container-fluid' style="background: #4B0082; height: auto;">
+    <div class='container'>
+    <header class='page-header'>
+      <div>
+        <!--personal logo -->
+        <a href="index.html">
+          <img src="img/Gabriel-Singbeh-logo.jpg" alt="logo" class="page-header__logo">
+        </a>
+      </div>
+      <nav class="main-navigation page-header__item">
+        <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+              </label>
+        <!-- <ul role="menubar"-->
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item">HOME</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item">ABOUT</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >WORK</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     </div>
-    <nav class="main-navigation page-header__item">
-      <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
-      <!-- <ul role="menubar"-->
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a
-            href="index.html"
-            role="menuitem"
-            class="navigation-list__item">HOME</a>
-        </li>
-        <li role="presentation">
-          <a
-            href="about.html"
-            role="menuitem"
-            class="navigation-list__item">ABOUT</a>
-        </li>
-        <li role="presentation">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation-list__item navigation-list__item--active"
-            >WORK</a>
-        </li>
-        <li role="presentation">
-          <a
-            href="contact.html"
-            role="menuitem"
-            class="navigation-list__item">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- This is the main content -->
-  <section>
-    <h1 class="experience">Work</h1>
+  </div>
+  <div class='container'>
+      <h1 class="experience">Work</h1>
+  </div>
+  <div class='container'>
     <div class="grid">
       <div class="grid__item">
         <div class="project-list__item">
@@ -123,13 +125,7 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- Here contains links to all the social media profiles -->
-  <!-- Footer with links to social media profiles -->
-  <div>
-</div>
-</div>
-</div>
+  </div>
 <footer class="page-footer">
   <p class="p__italic">Find me on</p>
   <div class="social-media">

@@ -15,7 +15,7 @@ Secondary Color (Orange): #e0b354;
   --footer-color:#fff;
   --link-color: #184a42;
   --link-color-visited: #0000FF;
-  --primary-font: 'Lato', sans-serif;
+  --primary-font: 'Lato', sans-serif; 
   --font-weight-light: 100;
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
@@ -116,7 +116,8 @@ a:active {
 
 }
 .page-header__logo {
-  width: 76px
+  width: 76px;
+
 }
 .page-header__item{
   float: left;
@@ -145,6 +146,7 @@ a:active {
   padding: 10px 10px;
   position: relative;
   z-index: 0;
+
 }
 
 .navigation-list li a.navigation-list__item--active {
@@ -177,7 +179,7 @@ a:active {
 }
 
 .navigation-list li a:after {
-  bottom: 0px;
+    
   transform: translateY(-10px);
 }
 
@@ -350,11 +352,27 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  align-items: : center;
 }
 .grid__item {
   display: inline-block;
-  width: 33%;
   padding: 20px;
+  background: lightgray;
+}
+
+
+.container-fluid{
+  width: 100%;
+  
+
+
+}
+
+.container{
+  width: 1140px;
+  display: block;
+  margin: 0 auto;
+
 }
 
 #about-picture{
@@ -567,7 +585,6 @@ a.active,a:hover{
   margin: 0;
   }
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

@@ -367,7 +367,7 @@ textarea {
 }
 
 .grid__item {
-  height: 250px;
+  height: 400px;
   padding: 10px;
   margin: 0;
   display: flex;

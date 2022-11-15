@@ -157,7 +157,8 @@ a:active {
 }
 
 /* Navigation Animation */
-.navigation-list li a:before, .navigation-list li a:after {
+.navigation-list li a:before, 
+.navigation-list li a:after {
   position: absolute;
   left: 0px;
   width: 100%;
@@ -175,12 +176,13 @@ a:active {
 
 .navigation-list li a:after {
     
-  transform: translateY(-10px);
+  transform: translateY(-0px);
 }
 
-.navigation-list li a:hover:before, .navigation-list li a:hover:after {
+.navigation-list li a:hover:before 
+.navigation-list li a:hover:after {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(10px);
 
 }
 /*styleing profile*/
@@ -445,11 +447,12 @@ nav ul{
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 nav ul li a{
   color: white;
   font-size: 17px;
@@ -457,6 +460,7 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 a.active,a:hover{
   background: rgb(122, 128, 0);
   transition: .5s;
@@ -470,11 +474,12 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-  @media (max-width: 952px){
-    label.logo{
+  @media (max-width: 952px) {
+    label.logo {
       font-size: 30px;
       padding-left: 50px;
     }
@@ -482,10 +487,12 @@ a.active,a:hover{
       font-size: 16px;
     }
   }
+
   @media (max-width: 858px){
-    .checkbtn{
+    .checkbtn {
       display: block;
     }
+
   ul{
     position: fixed;
     width: 100%;
@@ -610,4 +617,4 @@ a.active,a:hover{
     margin: 0;
   }
 }
-
+  

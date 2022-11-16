@@ -439,6 +439,12 @@ th, td {
   list-style-type: none;
 }
 
+.text {
+  color: rgb(0, 4, 128);
+  font-family: Arial;
+}
+
+
 *{
   padding: 0;
   margin: 0;

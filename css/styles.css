@@ -1,14 +1,14 @@
 
 :root {
   --primary-color: #357b70;
-  --secondary-color: #FFA500;
+  --secondary-color: #021b79;
   --dark-grey: #2b2b2b;
   --text-color:#000;
   --background-color: #F8F8FF;
   --header-color: #4B0082;
   --footer-color:#fff;
   --link-color: #184a42;
-  --link-color-visited: #0000FF;
+  --link-color-visited:#00e1ff;
   --primary-font: 'Lato', sans-serif; 
   --font-weight-light: 100;
   --font-weight-regular: 400;
@@ -79,7 +79,7 @@ a {
 }
   /* END OF Text styling */
 a:visited {
-  color:blue;
+  color: #00e1ff;
 }
 
 a:hover, a:focus {
@@ -367,7 +367,7 @@ textarea {
 }
 
 .grid__item {
-  height: 400px;
+  height: 550px;
   padding: 10px;
   margin: 0;
   display: flex;
@@ -375,6 +375,7 @@ textarea {
   align-items: center;
   border-radius: 0.35rem;
   cursor: pointer;
+  width:auto;
 }
 .grid__item:hover {
     transform: scale(1.05);
@@ -383,6 +384,13 @@ textarea {
 
 .container-fluid {
   width: 100%;
+}
+.img {
+ height: 100px;
+ width: 450px;
+ min-height: 200px;
+ border-radius: 0.35rem;
+ box-shadow: 0.5px 0.5px 10px rgb(22 2 94);
 }
 
 .container{

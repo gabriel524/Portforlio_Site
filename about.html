@@ -8,6 +8,13 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   <meta name="description" content="Gabriel Singbeh is a full Stack web developer who specializes in xyz.">
   <meta name="keywords" content="Gabriel A. Singbeh, Full Stack Web Developer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +22,11 @@
 <body>
   <div id="banner">
     <div class="content">
-    <div class="container-fluid" style=" height: auto">
+    <div class="style">
       <!-- This section contains the logo and the main navigation -->
       <div class='container'>
       <header class="page-header">
-        <div>
-          <!--personal logo -->
-          <a href="index.html">
-            <img
-              src="img/Gabriel-Singbeh-logo.jpg"
-              alt="logo"
-              class="page-header__logo"
-            />
-          </a>
-        </div>
       <nav class="main-navigation page-header__item">
-        <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
         <!-- <ul role="menubar"-->
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -64,34 +57,31 @@
         </ul>
       </nav>
     </header>
-    <div class="article">
-      <h1>About</h1>
-      <h2> Who is the Gabriel's Web Portfolio?</h2>
-      Gabriel's Web Portfolio is an online E-commer business web platform that is dedicated to developing onlie stores<br>
-      and selling different fashion design products at a lower price to its customers.<br>
-
-      <h2> What I do?</h2>
-      Here at Gabriel's web portfolio, I (we) help our clients in every way possible <br>
-      by giving them every necessary attention they need and solving their problems. <br>
-      We help our clients by addressing their problems such as building their online store for different product types<br>
-      we also help resolve issues faced on our site by clients such as site crashed during purchase, <br>
-      ways to use our website, dispute of refund, how to make payments via our site, etc.<br>
-
-      <h2> My Areas of Expertise!</h2>
-      I specialize in professional international online business and web development<br>
-      our agents are always available to help. If you are interested in running your own online business but don’t know how to go<br>
-      about the process, you are in the right place. We will help you build your online store from stretch to the end at a very low price with a 50% discount.<br>
     </div>
-    <div class="article">
-      <h2> About Me the Founder!</h2>
-      This page is about myself. This is what I enjoy doing:
-      <ul class="article">
-          <li>Front-end development</li>
-          <li>Back-end development</li>
-          <li>Test driven development</li>
-          <li>Climbing, etc.</li>
-      </ul>
-    </div>
+    </div><br><br><br>
+    <!--About-->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <img src="img/Gabriel_singbeh.jpg" alt="img" class="profile__portrait" />
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Full-Stack Web Developer</h2>
+          <p class="ptex">
+            Hi, I am Alexandra, but you can call me Alexa. Nice to meet you.
+            <br />I am a Full-Stack Web Developer with a strong Customer Service
+            background. My previous job as a Stewardess on Train has taught me
+            to solve problems on my own, be creative and improvise. I have
+            always had a passion for technology/making websites. <br />
+            In my free-time I love to do any kind of sports. Indoor/outdoor, you
+            choose!
+          </p>
+        </div>
+      </div>
+    </section><br><br><br>
+    <!--End About-->
+    <!-- about me code should be written here! -->
     <div class="skills-table__container">
       <table>
         <thead>
@@ -121,13 +111,17 @@
       </table>
     </div>
     <div>
+
       <div class="article">
         <!-- button to my CV-->
-        <a href="files/cv.pdf" class="button" target="_blank">Download my CV</a>
-      </div>
+        <a href="files/cv.pdf" class="button" target="_blank">Download my CV</a> And
+        <a href="https://github.com/gabriel524" class="button" target="_blank"
+              >Check out some of my code</a
+            >
+      </div><br><br>
       <div class="berlin-picture__container">
         <!-- Beggining of svg for Animation -->
-        <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" length="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
           </defs>
@@ -730,30 +724,39 @@
       </div>
     </div>
   </div>
-</div>
-<footer class="page-footer">
-  <p class="p__italic">Find me on</p>
-  <div class="social-media">
-    <!-- Github logo -->
-    <a href="https://github.com/gabriel524" target="_blank">
-    <img
-      src="img/github_icon.svg"
-      alt="Github"
-      class="social-media__item"/></a>
-    <!-- Tweitter logo-->
-    <a href="https://twitter.com/abrahamsingbehg" target="_blank">
-    <img
-      src="img/twitter_icon.svg"
-      alt="Twitter"
-      class="social-media__item"/></a>
-    <!-- LinkedIn logo -->
-    <a href="https://www.linkedin.com/in/gabriel1924" target="_blank">
-    <img
-      src="img/linkedin_icon.svg"
-      alt="LinkedIn"
-      class="social-media__item"
-    /></a>
-  </div>
-</footer>
+</div><br><br><br><br><br>
+  <section id="footer">
+      <div class="footer container">
+        <h1 class="p__italic">Find me on</h1>
+        <div class="social-icon">
+          <div class="social-item">
+            <a target="_blank" href="https://github.com/gabriel524"
+              ><i class="fa-brands fa-square-github fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://www.instagram.com/ap.webdev/"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://www.linkedin.com/in/gabriel1924" 
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://twitter.com/abrahamsingbehg" 
+              ><i class="fa-brands fa-twitter-square fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <h2>
+          Copyright &copy; 2022 - Gabriel Abraham Singbeh. All rights reserved.
+        </h2>
+      </div>
+    </section>
+     <script src="app.js"></script>
 <script src="js/tota11y.min.js"></script>
 </body>
+</html>
+

@@ -147,14 +147,39 @@ a:active {
   text-shadow: 3rem;
   
 }
+.section-title2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #474973;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 3rem;
+}
 .section-title span {
   color: #a69cac;
+}
+
+.section-title2 span {
+  color: #a69cac;
+}
+.section-title {
+margin: 6%;
+}
+
+.section-title2 {
+margin: 0%;
+
 }
 
 .ptex {
     color: #a69cac;
     text-transform: capitalize;
     text-size-adjust: 2px;
+}
+#about{
+  background-color: #199eea;
+  margin: 0px;
 }
 
 #about .col-left {
@@ -269,9 +294,14 @@ textarea {
   max-width: 700px;
   /*end of all forms styling*/
 }
- .experience {
+ .experience .section-title {
    text-align: center;
 
+ }
+ .content {
+  background-color: slateblue;
+ 
+  
  }
 
 /*working with grid styliing*/
@@ -473,6 +503,10 @@ nav ul li a{
 
 a.active,a:hover {
   transition: .5s;
+}
+#contact {
+  background-color:#0d0c1d;
+  height:100vh;
 }
 
 #contact .contact {

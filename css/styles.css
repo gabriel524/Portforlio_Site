@@ -138,15 +138,15 @@ a:active {
 }
 
 .section-title {
-  font-size: 4rem;
-  font-weight: 300;
-  color: #474973;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  text-shadow: 3rem;
-  
+    font-size: 4rem;
+    font-weight: 300;
+    color: #474973;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
 }
+
 .section-title2 {
   font-size: 4rem;
   font-weight: 300;
@@ -164,7 +164,7 @@ a:active {
   color: #a69cac;
 }
 .section-title {
-margin: 6%;
+margin: 0%;
 }
 
 .section-title2 {
@@ -173,7 +173,7 @@ margin: 0%;
 }
 
 .ptex {
-    color: #a69cac;
+    color: #F8F8FF;
     text-transform: capitalize;
     text-size-adjust: 2px;
 }
@@ -199,11 +199,11 @@ margin: 0%;
 }
 
 /* #### START OF Button styling #### */
-button, .button {
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--secondary-color);
+  background-color: #F8F8FF;
   color: var(--link-color);
   font-weight: var(--font-weight-regular);
   text-decoration: none;
@@ -216,6 +216,29 @@ button, .button {
 
 }
 
+.button1 {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  color: var(--link-color);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+  padding: 10px;
+  background-color: #474973;
+  margin: 5px;
+  border-radius: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+  align-items: center;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+
+}
+
+.button1:hover {
+  background-color: #a69cac;
+  color: orange;
+}
+
 button:hover, button:focus, 
 .button:hover, .button:focus {
   cursor: pointer;
@@ -224,6 +247,10 @@ button:hover, button:focus,
 
 a.button {
   color: var(--link-color-);
+}
+.button:hover {
+  background-color: orange;
+  color: #474973;
 }
 
 textarea {
@@ -248,10 +275,6 @@ textarea {
 
 .social-media__item:hover {
   transform: scale(1.2);
-}
-
-.content {
-  min-height: calc(100vh - 80px);
 }
 
 /* text styly for the social media links*/
@@ -298,8 +321,13 @@ textarea {
    text-align: center;
 
  }
- .content {
+ .content{
+  min-height: calc(100vh - 80px);
+}
+
+ .content2 {
   background-color: slateblue;
+
  }
 
 /*working with grid styliing*/
@@ -380,8 +408,8 @@ th, td {
 .article {
   max-width: 700px;
   margin: 0 auto;
-  text-align:center;
-  list-style-type: none;
+  text-align: center;
+  
 }
 
 .text {
@@ -474,7 +502,6 @@ th, td {
 
 }
 
-
 .nav {
   background: var(--header-color);
   height: 80px;
@@ -523,7 +550,7 @@ a.active,a:hover {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  padding: 30px;
+  padding: 10px;
   margin: 30px;
   justify-content: center;
   display: flex;
@@ -531,11 +558,13 @@ a.active,a:hover {
   flex-direction: column;
   box-shadow: 0px 0px 18px 0 #a69cac;
   transition: 0.3s ease box-shadow;
-  background-color:cornflowerblue;
+  background-color:lightgray;
 }   
 
 #contact .contact-item:hover {
   box-shadow: 0px 0px 10px 0 #a69cac;
+    transform: scale(1.05);
+    transition: 0.5s ease;
   cursor: default;
 }
 
@@ -561,15 +590,6 @@ a.active,a:hover {
   color: #474973;
 }
 
-.section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    color: #474973;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
 /*End Contact section*/
 
 
@@ -652,7 +672,6 @@ a.active,a:hover {
     text-transform: uppercase;
 }
 .skt-content  {
-    display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -666,11 +685,12 @@ a.active,a:hover {
   color: #f1dac4;
   font-weight: 350;
   background-color: #474973;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-top: 20px;
   padding: 5px 20px;
   transition: 0.3s ease;
   transition-property: background-color, color;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
 }
 
 .btn:hover {
@@ -703,6 +723,7 @@ a.active,a:hover {
     padding-left: 20px;
   }
 }
+}
 
 @media all and (max-width: 750px) {
   .grid {
@@ -715,7 +736,6 @@ a.active,a:hover {
   }
 
   .skt-content p {
-
     font-size: 20px;
     z-index: 0;
   }
@@ -731,7 +751,7 @@ a.active,a:hover {
   #about .col-left .about-img {
     z-index: -1;
   }
-
+}
 
 
 

@@ -4,10 +4,10 @@
   --primary-color: #357b70;
   --secondary-color:#a69cac;
   --dark-grey: #2b2b2b;
-  --text-color:#000;
+  --text-color:#000000;
   --background-color: #F8F8FF;
   --footer-color:#fff;
-  --link-color: #184a42;
+  --link-color:#00e1ff;
   --link-color-visited:#00e1ff;
   --primary-font: 'Lato', sans-serif; 
   --font-weight-light: 100;
@@ -61,7 +61,24 @@ a {
 /* START OF Text styling */
 h1 {
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-h1);
+
+}
+.logo {
+  color:hsl(240, 75%, 2%);
+  justify-content: center;
+  top: 2px;
+  font-style: italic;
+  text-shadow: hsl(278, 96%, 48%);
+  bottom: 2px;
+  font-size: 45px;
+  border: 3px solid orangered;
+  border-radius: 100%;
+  height: 60px;
+  width: 80px;
+  border-top: 110px;
+  border-bottom: 110px;
+  background-color:orangered;
+  margin: 10 0px;
 }
 
 h2 {
@@ -107,7 +124,6 @@ a:active {
   flex-grow: 1;
   text-align: right;
 }
-
 
 .page-header__item {
   float: left;
@@ -176,6 +192,7 @@ margin: 0%;
     color: #F8F8FF;
     text-transform: capitalize;
     text-size-adjust: 2px;
+    font-style: italic;
 }
 #about{
   background-color: #199eea;
@@ -204,7 +221,7 @@ margin: 0%;
   display: inline-block;
   font-family: inherit;
   background-color: #F8F8FF;
-  color: var(--link-color);
+  color:#00e1ff;
   font-weight: var(--font-weight-regular);
   text-decoration: none;
   padding: 10px;
@@ -213,14 +230,13 @@ margin: 0%;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
   align-items: center;
-
 }
 
 .button1 {
   border: none;
   display: inline-block;
   font-family: inherit;
-  color: var(--link-color);
+  color: #00e1ff;
   font-weight: var(--font-weight-regular);
   text-decoration: none;
   padding: 10px;
@@ -255,6 +271,16 @@ a.button {
 
 textarea {
   resize:none;
+}
+.wwe {
+  text-shadow: transparent;
+  font-style: #00e1ff;
+  font-style:italic;
+}
+
+.skt-content h1 {
+    font-weight: 34px; 
+    line-height: 0.1;
 }
 /* end of button styling */
 
@@ -558,11 +584,11 @@ a.active,a:hover {
   flex-direction: column;
   box-shadow: 0px 0px 18px 0 #a69cac;
   transition: 0.3s ease box-shadow;
-  background-color:lightgray;
+  background-color:gray;
 }   
 
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 10px 0 #a69cac;
+  box-shadow: 0px 0px 10px 0 white;
     transform: scale(1.05);
     transition: 0.5s ease;
   cursor: default;
@@ -644,27 +670,33 @@ a.active,a:hover {
 /*End Footer*/
 
 .skt-content  h1 {
-    font-size: 70px;
-    text-shadow: -2.5px 2.5px 5px #161b33;
-    color: #474973;
+    font-style: italic;
+    font-size: 60px;
+    text-shadow: hwb(179 9% 3%);
+    color: hwb(179 9% 3%);
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .img-container {
   height: 100vh;
-  background: url("../img/DSC00961.JPG") no-repeat center center/cover;
+  background: url("../img/imgmt.JPG") no-repeat center center/cover;
   position: relative;
 }
 
 .img-container::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   background: rgba(6, 0, 20, 0.488);
 }
 
 .img-container * {
   z-index: 10;
 }
+
 .skt-content p {
     font-size: 30px;
     font-weight: 600;
@@ -682,7 +714,7 @@ a.active,a:hover {
 .btn {
   text-decoration: none;
   max-width: fit-content;
-  color: #f1dac4;
+  color:#00e1ff;
   font-weight: 350;
   background-color: #474973;
   border-radius: 20px;
@@ -696,6 +728,18 @@ a.active,a:hover {
 .btn:hover {
   background-color: #a69cac;
   color: #474973;
+}
+
+.contact-item:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a69cac;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @media all and (min-width: 900px) {
@@ -722,7 +766,6 @@ a.active,a:hover {
     text-align: left;
     padding-left: 20px;
   }
-}
 }
 
 @media all and (max-width: 750px) {
@@ -751,7 +794,7 @@ a.active,a:hover {
   #about .col-left .about-img {
     z-index: -1;
   }
-}
+
 
 
 

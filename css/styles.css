@@ -242,7 +242,7 @@ margin: 0%;
   border: none;
   display: inline-block;
   font-family: inherit;
-  color: #fff;
+  color: #00e1ff;
   font-weight: var(--font-weight-regular);
   text-decoration: none;
   padding: 10px;
@@ -261,8 +261,8 @@ margin: 0%;
   margin: 5px;
   align-items: center;
   color: aliceblue;
-  top: 500px;
-  color: antiquewhite;
+  top: 13px;
+  position: relative;
 }
 .button2 {
   display: inline-block;

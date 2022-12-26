@@ -232,10 +232,11 @@ margin: 0%;
   padding: 10px;
   margin: 5px;
   height: 30%;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  border: 2px solid gray;
   transition: 0.2s opacity;
   align-items: center;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
 }
 
 .button1 {
@@ -395,8 +396,9 @@ textarea {
 }
 
 .grid__item {
-  height: 550px;
+  height: 610px;
   padding: 10px;
+  top: 10px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -460,6 +462,7 @@ th, td {
 .text {
   color: rgb(0, 4, 128);
   font-family: Arial;
+  font-size: 20px;
 }
 
 * {
@@ -603,13 +606,13 @@ a.active,a:hover {
   flex-direction: column;
   box-shadow: 0px 0px 18px 0 #a69cac;
   transition: 0.3s ease box-shadow;
-  background-color:gray;
+  background-color:rgb(122, 122, 157);
 }   
 
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 10px 0 white;
-    transform: scale(1.05);
-    transition: 0.5s ease;
+  box-shadow: 0px 0px 10px 0 smore white;
+  transform: scale(1.05);
+  transition: 0.5s ease;
   cursor: default;
 }
 

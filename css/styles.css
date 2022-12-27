@@ -94,6 +94,7 @@ p {
 a {
   color: var(--link-color);
 }
+
   /* END OF Text styling */
 a:visited {
   color: #00e1ff;

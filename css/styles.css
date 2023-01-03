@@ -63,24 +63,6 @@ h1 {
   font-weight: var(--font-weight-bold);
 
 }
-.logo {
-  color:hsl(240, 75%, 2%);
-  justify-content: center;
-  top: 6px;
-  font-style: italic;
-  text-shadow: hsl(278, 96%, 48%);
-  bottom: 2px;
-  font-size: 45px;
-  border: 3px solid #00eeff;
-  border-radius: 100%;
-  height: 60px;
-  width: 80px;
-  border-top: 110px;
-  border-bottom: 110px;
-  background-color:#00fffb;
-  margin: 10 0px;
-  position: absolute;
-}
 
 h2 {
   font-weight: var(--font-weight-semi-bold);
@@ -94,11 +76,7 @@ p {
 a {
   color: var(--link-color);
 }
-
   /* END OF Text styling */
-a:visited {
-  color: #00e1ff;
-}
 
 a:hover, a:focus {
   /* No underlining when hovering over a link, color orange */
@@ -106,46 +84,77 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-a:active {
-  /* selected link */
-  color: var(--secondary-color);
-}
-
 /*START OF Header styling*/
 .page-header {
   display: flex;
-  width: 100%;
-  padding: 8px 10px 0px 10px;
-  background-color: var(--header-color);
+  
+  
 }
-.page-header__item {
-  flex: 0 1 200px;
-}
+/*End of Header styling*/
 
-.page-header__item:last-child {
+/*this is the sTART Of navigation styling #### */
+
+.navbar:last-child {
   flex-grow: 1;
   text-align: right;
 }
 
-.page-header__item {
-  float: left;
-  display: block;
-  margin-left: auto;
-  width:250px;
-  height: 50px;
-  height: auto;
-
+.navbar li a {
+  color: #faf9fb;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  margin: 0 5px;
 }
+
+.navbar a:hover {
+  border-top: #ff4500 2px solid;
+  border-bottom: #ff4500 2px solid;
+  border-radius: 50px;
+  color: aqua;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/*nav to work on later */
+
+.style {
+  background-color: #4b0082;
+  position:fixed; 
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  height: 70px;
+  transition: 0.5s;
+}
+/*End of navigation styling*/
+
+/*logo styling*/
+.logo {
+  color:hsl(240, 75%, 2%);
+  justify-content: center;
+  top: 6px;
+  bottom: 2px;
+  font-size: 45px;
+  border: 3px solid #00eeff;
+  border-radius: 100%;
+  height: 60px;
+  width: 80px;
+  border-top: 110px;
+  border-bottom: 110px;
+  background-color:#00fffb;
+  margin: 10 0px;
+  position: absolute;
+  float: left;
+}
+/*End of logo styling*/
 
 /*styleing profile*/
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 0 auto;
-}
-
 .profile__portrait {
   float: left;
   height: auto;
@@ -199,6 +208,7 @@ margin: 0%;
     text-transform: capitalize;
     text-size-adjust: 2px;
     font-style: italic;
+    text-align: left;
 }
 #about{
   background-color: #199eea;
@@ -241,12 +251,9 @@ margin: 0%;
 }
 
 .button1 {
-  border: none;
   display: inline-block;
   font-family: inherit;
   color: #00e1ff;
-  font-weight: var(--font-weight-regular);
-  text-decoration: none;
   padding: 10px;
   background-color: #474973;
   margin: 5px;
@@ -255,8 +262,8 @@ margin: 0%;
   transition: 0.2s opacity;
   align-items: center;
   box-shadow: 0px 0px 2px 2px rgb(0,0,0);
-
 }
+
 .fab {
   display: inline-block;
   padding: 10px;
@@ -353,17 +360,6 @@ textarea {
     margin: 0;
   }
 
-/* this is the beggining of styling of all forms*/
-
-.information_Contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 0 auto;
-  max-width: 700px;
-  /*end of all forms styling*/
-}
  .experience .section-title {
    text-align: center;
 
@@ -374,7 +370,6 @@ textarea {
 
  .content2 {
   background-color: slateblue;
-
  }
 
 /*working with grid styliing*/
@@ -426,6 +421,7 @@ textarea {
   width: 1140px;
   display: block;
   margin: 0 auto;
+  align-items: center;
 }
 
 #about-picture {
@@ -451,13 +447,15 @@ th, td {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  max-width: 700px;
 }
 
-.article {
+.article  {
   max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  
+  margin: auto;
+  text-align: right;
+  padding-right: 89.50px;
+   
 }
 
 .text {
@@ -474,52 +472,9 @@ th, td {
   box-sizing: border-box;
 }
 
-.style {
-  background-color: #4b0082;
-  position:fixed; 
-  width: 100%;
-  height: 70px;
-  top: 0;padding:
-  0 30px;
-  display: flex;
-  transition: 0.5s;
-}
-
-/*this is the sTART Of navigation styling #### */
-.navigation-list {
-  list-style-type: none;
-}
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-.navigation-list li a.navigation-list__item {
-  text-decoration: none;
-  color: #fff;
-  font-size: var(--font-size-body);
-  font-weight: var(--font-weight-regular);
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-
-}
-
-.navigation-list li a.navigation-list__item--active {
-  text-decoration: none;
-  color: orange;
-  font-size: var(--font-size-body);
-  font-weight: var(--font-weight-regular);
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  /*End of navigation styling*/
-}
-
 /* Navigation Animation */
-.navigation-list li a:before, 
-.navigation-list li a:after {
+.active li a:before, 
+.active li a:after {
   position: fixed;
   display: flex;
   align-items: center;
@@ -534,37 +489,21 @@ th, td {
   transition: 0.5s;
 }
 
-.navigation-list li a:before {
+.active li a:before {
   top: 0px;
   transform: translateY(10px);
 }
 
-.navigation-list li a:after {
+.active li a:after {
     
   transform: translateY(-0px);
 }
 
-.navigation-list li a:hover:before 
-.navigation-list li a:hover:after {
+.active li a:hover:before 
+.active li a:hover:after {
   opacity: 1;
   transform: translateY(10px);
 
-}
-
-.nav {
-  background: var(--header-color);
-  height: 80px;
-  width: 100%;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
 }
 
 nav ul li a{
@@ -583,19 +522,8 @@ a.active,a:hover {
   height:100vh;
 }
 
-#contact .contact {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 50px auto;
-}
-
-#contact .contact-items {
-  width: 400px;
-  padding: 20px;
-}
-
 #contact .contact-item {
-  width: 80%;
+  width: 90%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -634,11 +562,6 @@ a.active,a:hover {
   line-height: 2rem;
   font-weight: 400;
 }
-
-#contact .contact-info a:hover {
-  color: #474973;
-}
-
 /*End Contact section*/
 
 
@@ -708,7 +631,6 @@ a.active,a:hover {
 }
 
 .img-container::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -764,21 +686,21 @@ a.active,a:hover {
   top: 0;
   border-radius: 10px;
 }
-
+/*media queries*/
 @media all and (min-width: 900px) {
   #contact .contact {
     flex-direction: column;
     padding: 80px 0;
     align-items: center;
     justify-content: center;
-    min-height: 675px;
+    min-height: 775px;
   }
   #contact .contact-items {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
   }
   #contact .contact-item {
     margin: 20px;
@@ -791,33 +713,9 @@ a.active,a:hover {
   }
 }
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 30px;
-  }
+}
 
-  .skt-contenth1 {
-    font-size: 50px;
-    z-index: 0;
-  }
-
-  .skt-content p {
-    font-size: 20px;
-    z-index: 0;
-  }
-
-  .btn {
-    z-index: 0;
-  }
-
-  #about .col-right p {
-    margin-left: 0px;
-  }
-
-  #about .col-left .about-img {
-    z-index: -1;
-  }
-
+/*media queries ends*/
 
 
 

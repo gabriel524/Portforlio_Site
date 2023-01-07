@@ -117,7 +117,7 @@ a:hover, a:focus {
   bottom: 0;
   transition: 0.5s;
   align-items: center;
-  padding: 0  250px;
+
   text-decoration: none;
 }
 
@@ -543,7 +543,7 @@ a.active,a:hover {
 }
 
 #contact .contact-items {
-    max-width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -698,10 +698,13 @@ a.active,a:hover {
   .grid {
     grid-template-columns: 1fr;
     width: 100%;
+    justify-content: center;
+    margin: auto;
   }
 
 }
-@media all and (max-width: 750px) {
+
+@media all and (min-width:300px) and (max-width: 1100px) {
   .grid {
     grid-gap: 20px;
   }
@@ -713,16 +716,20 @@ a.active,a:hover {
     font-size: 20px;
     z-index: 0;
   }
+  .skt-content h1 {
+    font-size: 30px;
+    z-index: 0;
+  }
   .btn {
     z-index: 0;
   }
   #about .col-right p {
-    margin-left: 0px;
+    margin-left: 2px;
+  }
+   #about .section-title2 {
+   flex-direction: row;
   }
   
-  .navbar {
-    opacity: 100;
-  }
   .navbar ul {
     list-style: none;
     position: absolute;
@@ -773,9 +780,8 @@ a.active,a:hover {
     margin-right: 10px;
     background-color: aliceblue;
   }
-
    .navbar .nav-list {
-    padding-left: 60px;
+    padding-left: 300px;
     display: flex;
     position: absolute;
     top: 0%;
@@ -811,11 +817,12 @@ a.active,a:hover {
     bottom: 0;
   }
 }
-@media only screen and (min-width: 320px) {
+@media all and (min-width: 300px), (max-width: 900) {
   #about .about {
     flex-direction: column;
-    height: auto;
-  
+    width: 100%;
+    margin: auto;
+    justify-content: center;
   }
   #about .col-left {
     width: 10%;
@@ -829,57 +836,42 @@ a.active,a:hover {
   }
 }
 
-@media only screen and (min-width: 320px) {
-  .navbar .logo{
-    margin-right: 20px;
-    float: left;
-    z-index: 1;
-   display: flex;
+@media screen and (min-width : 320px) and (max-width: 1200px) {
+  #contact .contact  {
+    flex-direction: column;
+    padding: 60px 0;
+    min-height: 675px;
+    align-items: center;
+    justify-content: center;
+    }
+  #contact .contact-items {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding-right: 78;
+    min-width: 2px;
+    justify-content: center;
   }
+
+  .container {
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    font-size: 1em;
+  }
+  
+ #about .profile__portrait {
+  width: 200px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 }
-
-/* Custom, iPhone Retina 
-@media only screen and (min-width : 320px) {
-  .content2 {
-        background-color: slateblue;
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-        padding-left: 20px;
-    }
-
 }
-
- Extra Small Devices, Phones 
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets 
-@media only screen and (min-width : 768px) {
-    /* your mobile css, change this as you please */
-    
-}
-
-/* Medium Devices, Desktops 
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens 
-@media only screen and (min-width : 1200px) { 
-     {
-        background-color: #f7f7f7;
-        height: 80vh;
-        clear: both;
-        text-align: center;
-    }
-}
-/* media queries ends */
-
-
-
-
 

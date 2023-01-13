@@ -579,6 +579,11 @@ a.active,a:hover {
   top: 0;
   border-radius: 10px;
 }
+
+.contact_me {
+  text-decoration: underline;
+   font-size: 1.3em;
+}
 /* End Contact section */
 
 /* mani footer styling */

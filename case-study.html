@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Study Case</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="description"
+      content="Gabriel Singbeh is a full Stack web developer who specializes in xyz."
+    />
+    <meta
+      name="keywords"
+      content="Gabriel A. Singbeh, Full Stack Web Developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="content2">
+     <div>
+      <!-- This section contains the logo and the main navigation -->
+        <nav class="navbar">
+          <div class="logo"><span>G</span>.S</div>
+          <div class="nav-list">
+          <div class="hamburger">
+          <div class="bar">
+        </div>
+        </div>
+        </div>
+        <ul>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="work.html" class="nav-item">Work</a></li>
+          <li><a href="case-study.html" class="nav-item nav-active">Case study</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div><br><br><br><br>
+
+<section id="study" class="section_wrapper">
+      <div class="case-study__content-wrapper">
+        <div class="title_subtitle_center">
+          <h2>Case Study: <span class="yellowing">MyFlix App</span></h2>
+          <h3>a Full-stack project</h3>
+        </div>
+        <div class="case-study__list">
+          <!--Overview start-->
+          <div class="case-study__list-item">
+            <div class="case-study__text-wrapper">
+              <h2>Overview</h2>
+              <p>
+                MyFlix is a info-movie app, created for people who love all
+                about cinema. Like the
+                <a href="https://www.allmovie.com/" target="_blank"
+                  >All Movie Guide</a
+                >this app is a friendly search tool for information about any
+                movie, and to keep the best ones in hand, in a list of
+                favourites, for the next movie session or chat.
+              </p>
+              <p>
+                The project was one of the achievements of Career Foundry
+                course, with the aim to teach and practice a complete experience
+                of a Full-Stack developer, using one of the most common tech
+                stacks of the moment, MERN (MongoDB, Express, React and
+                Node.js).
+              </p>
+            </div>
+            <div class="case-study__image-wrapper">
+              <img
+                class="case-study__image"
+                src="img/project_photos/myflix_screenshot.png"
+                alt="image_project"
+              />
+            </div>
+          </div>
+          <!--Overview end-->
+
+          <!--Approach start-->
+          <div class="case-study__list-item">
+            <div class="case-study__text-wrapper">
+              <h2>Server-Side Approach</h2>
+              <p>
+                To store the movies and users information, a server-side with
+                <a
+                  href="https://aws.amazon.com/what-is/restful-api/"
+                  target="_blank"
+                >
+                  RESTful API</a
+                >
+                (interface to exchange information securely over the internet)
+                was built with Node.js and Express, which interacts with a
+                database in
+                <a
+                  href="https://www.mongodb.com/why-use-mongodb"
+                  target="_blank"
+                  >MongoDB</a
+                >. To access the API the
+                <a
+                  href="https://www.codecademy.com/article/what-is-crud"
+                  target="_blank"
+                  >CRUD
+                </a>
+                (create, read, update and delete) method was implemented and the
+                answers were given in a JSON format (text-based format for
+                Javascript object syntax). The
+                <a
+                  href="https://learning.postman.com/docs/developer/intro-api/"
+                  target="_blank"
+                  >Postman app</a
+                >
+                was also used as a crucial tool to test each executed request.
+              </p>
+              <p>
+                An important step was to include user authentication and
+                authorization logic in the form of basic HTTP and
+                <a
+                  href="https://supertokens.com/blog/what-is-jwt"
+                  target="_blank"
+                  >JWT</a
+                >
+                (JSON Web Token) which is a standard internet tool that, after
+                user registration, based on the user's credentials, generates an
+                encrypted token to prevent security issues.
+              </p>
+            </div>
+            <div class="case-study__image-wrapper">
+              <img
+                class="case-study__image"
+                src="img/project_photos/doc_myflix_screenshot.png"
+                alt="image_project"
+              /><br />
+              <img
+                class="case-study__image"
+                src="img/studyCase_images/Hashing_Password_test.png"
+                alt="image_project"
+              />
+            </div>
+          </div>
+          <!--Approach end-->
+          <!--Approach2 start-->
+          <div class="case-study__list-item">
+            <div class="case-study__text-wrapper">
+              <h2>Client-Side Approach</h2>
+              <p>
+                Changing gears to the user’s point of view, the web page was
+                developed with
+                <a href="https://reactjs.org/" target="_blank">React</a> (a
+                modern Javascript library) and
+                <a href="https://react-redux.js.org/" target="_blank"
+                  >React-Redux</a
+                >
+                (a state manager to guarantee consistent behaviour across server
+                and client logic). Bootstrap (a Javascript styling library) was
+                also used with some of its pre-built components.
+              </p>
+              <p>
+                After a short register or login, users can navigate between the
+                main view, where a movie list and a search tool is provided to
+                quickly find specific movies; a movie details view that shows
+                more information about the movie like synopis, genre and
+                director; a separate genre and director views; and the user's
+                own profile, where they can edit their own data or look/remove
+                movies from their favourite list.
+              </p>
+            </div>
+            <div class="case-study__image-wrapper">
+              <img
+                class="case-study__image"
+                src="img/studyCase_images/myflix_users_didi.png"
+                alt="image_project"
+              />
+            </div>
+          </div>
+          <!--Approach2 end-->
+          <!--Challange start-->
+          <div class="case-study__list-challenge">
+            <div class="case-study__text-wrapper">
+              <h2>Challenge</h2>
+              <p>
+                Working with react is my goal, so I was excited to build this
+                app from the beginning. The struggles were most related to the
+                backend since it has a new way to work and debug, but I coop
+                with that with the same natural procedure steps: google search
+                for documentation for new frameworks and libraries, google
+                search for specific issues, console logging when it was
+                possible, including debugging function, and asking for help when
+                none of the firsts could solve my problem.
+              </p>
+              <p>
+                The next steps for this app will be a better styling tool or
+                intensive Bootstrap learning, to improve visual aspects and a
+                more friendly user experience, although all the chosen tools
+                were a great selection from the course.
+              </p>
+              <p>
+                Another important lesson is to save more time to reach the
+                expectations of the schedule.
+              </p>
+            </div>
+          </div>
+          <!--Challenge end-->
+        </div>
+        <div class="case-study__text-wrapper">
+          <h2>Credits</h2>
+          <div class="case-study__credits">
+            <ul role="list">
+              <li><span class="yellowing">Role:</span> Lead Developer</li>
+              <li><span class="yellowing">Tutor:</span> Adam Pagels</li>
+              <li><span class="yellowing">Mentor:</span> Akunna Nwosu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Footer with links to social media profiles -->
+       <section id="footer">
+      <div class="footer container">
+        <h1 class="p__italic">Find me on</h1>
+        <div class="social-icon">
+          <div class="social-item">
+            <a target="_blank" href="https://github.com/gabriel524"
+              ><i class="fa-brands fa-square-github fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://www.instagram.com/singbehabraham/"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://www.linkedin.com/in/gabriel1924" 
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://twitter.com/abrahamsingbehg" 
+              ><i class="fa-brands fa-twitter-square fa-2x"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a target="_blank" href="https://medium.com/@abrahamsingbehg/about"
+              ><i class="fa-brands fa-medium fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <h2>
+          Copyright &copy; 2022 - Gabriel Abraham Singbeh. All rights reserved.
+        </h2>
+      </div>
+    </section>
+<script src="js/tota11y.min.js"></script>
+<script src="app.js"></script>
+</body>

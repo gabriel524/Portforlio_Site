@@ -35,10 +35,6 @@ a {
   color: var(--primary-color);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     background-color: hsl(240, 33%, 98%);
@@ -876,5 +872,6 @@ a.active,a:hover {
 }
 
 }
+
 }
 

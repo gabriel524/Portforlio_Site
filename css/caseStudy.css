@@ -113,7 +113,44 @@ img, picture {
     border-radius: 20px;
     border: 1px solid rgb(83, 40, 155);
     padding: 4px;
-    box-shadow: 0.6px 0.5px 11px rgb(250, 249, 251);
+    box-shadow: 2.6px 2.5px 11px rgb(250, 249, 251);
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 350;
+    color: #f40591;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0px;
+    
+}
+
+.section-title2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #474973;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 3rem;
+    border: 30px solid #fdfcfc;
+    background-color: palevioletred;
+    border-radius: 25px;
+    bottom: 10px;
+    margin-top: -35px;
+    box-shadow: 2.6px 2.5px 11px rgb(42, 19, 66);
+    border-color: #ff00ee rgb(57,255,12) hwb(184 22% 1%) orangered;
+    
+}
+.section-title3 {
+     font-size: 30px;
+    font-weight: 350;
+    color: #f40591;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0px;
+    
+    
 }
 
 .text_image_wrapper {

@@ -1,59 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Home Page</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <meta name="description" content="Gabriel Singbeh is a full Stack web developer who specializes in xyz.">
-    <meta name="keywords" content="Gabriel A. Singbeh, Full Stack Web Developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-  <body>
-      <div class="content img-container">
-        <div>
-      <!-- This section contains the logo and the main navigation -->
-        <nav class="navbar">
-          <div class="logo"><span>G</span>.S</div>
-          <div class="nav-list">
-          <div class="hamburger">
-          <div class="bar">
-        </div>
-        </div>
-        </div>
-        <ul>
-          <li><a href="index.html" class="nav-item nav-active">Home</a></li>
-          <li><a href="about.html" class="nav-item">About</a></li>
-          <li><a href="work.html" class="nav-item">Work</a></li>
-          <li><a href="case-study.html" class="nav-item">Case study</a></li>
-          <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
-      </nav>
-      </div>
-      <div class='container'>
-    </div><br><br><br><br><br><br><br>
-      <!--Home-->
-      <div class="skt-content">
-        <h1>Gabriel Singbeh</h1>
-        <p class="wwe1">Full-Stack Web Developer</p>
-        <a href="about.html" class="btn">Get to know me</a>
-      </div>
-      </div>
-      </div>
-    <!--End Home-->
-    <!--more code to ad in between Home and footer of the file for page scrolling capability-->
-
-    <!--About-->
+<!--About-->
    <section id="about">
       <div class="about container">
         <div class="col-left">
@@ -940,7 +885,6 @@
     </div><br><br>
   </section>
     <!--work info end-->
-    
     <!--Contact-->
     <section id="contact">
       <div class="contact container">
@@ -968,42 +912,3 @@
       </div>
     </section>
     <!--End Contact-->
-    <section id="footer">
-      <div class="footer container">
-        <h1 class="p__italic">Find me on</h1>
-        <div class="social-icon">
-          <div class="social-item">
-            <a target="_blank" href="https://github.com/gabriel524"
-              ><i class="fa-brands fa-square-github fa-2x"></i
-            ></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://www.instagram.com/singbehabraham/"
-              ><i class="fa-brands fa-instagram fa-2x"></i
-            ></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://www.linkedin.com/in/gabriel1924"
-              ><i class="fa-brands fa-linkedin fa-2x"></i
-            ></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://twitter.com/abrahamsingbehg"
-              ><i class="fa-brands fa-twitter-square fa-2x"></i
-            ></a>
-          </div>
-          <div class="social-item">
-            <a target="_blank" href="https://medium.com/@abrahamsingbehg/about"
-              ><i class="fa-brands fa-medium fa-2x"></i
-            ></a>
-          </div>
-        </div>
-        <h2>
-          Copyright &copy; 2022 - Gabriel Abraham Singbeh. All rights reserved.
-        </h2>
-      </div>
-    </section>
-<script src="js/tota11y.min.js"></script>
-<script src="app.js"></script>
-</body>
-</html>

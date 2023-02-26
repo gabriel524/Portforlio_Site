@@ -49,11 +49,6 @@ a:active {
   padding-top: 90px;
 }
 
-.credits {
-  text-align: left;
-  margin: 0 20px;
-}
-
 img, picture {
     max-width: 115%;
     display: block;
@@ -92,9 +87,7 @@ img, picture {
 .yellowing {
   color: var(--primary);
 }
-.yellowing li {
-  display: block;
-}
+
 .social-item a{
     color: aqua;
 }
@@ -125,6 +118,13 @@ img, picture {
     letter-spacing: 0.2rem;
     margin-bottom: 0px;
     
+}
+#credit{
+  display:inline;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 0.10;
+  margin-top: 50%;
 }
 
 .section-title2 {

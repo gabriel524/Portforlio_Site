@@ -49,14 +49,17 @@ a:active {
   padding-top: 90px;
 }
 
-img, picture {
-    max-width: 115%;
-    display: block;
+.credits {
+  text-align: left;
+  margin: 0 20px;
 }
-.credit{
-  color: #f40591;
-  text-decoration: underline;
-  text-transform: uppercase;
+
+#credit{
+  display:inline;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 0.10;
+  margin-top: 50%;
 }
 
 #study {
@@ -87,7 +90,6 @@ img, picture {
 .yellowing {
   color: var(--primary);
 }
-
 .social-item a{
     color: aqua;
 }
@@ -108,23 +110,32 @@ img, picture {
     border-radius: 20px;
     border: 1px solid rgb(83, 40, 155);
     padding: 4px;
-    box-shadow: 2.6px 2.5px 11px rgb(250, 249, 251);
+    box-shadow: 1.6px 2.5px 11px rgb(250, 249, 251);
 }
+
+img, picture {
+    width: 600px;
+    max-height: 300px;
+    display: block;
+}
+#case{
+  padding-right:90px;
+}
+#d{
+  display: flex;
+
+}
+
+#skills{
+padding-left: 210px;
+}
+
 .section-title {
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 350;
     color: #f40591;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 0px;
-    
-}
-#credit{
-  display:inline;
-  margin: 0;
-  letter-spacing: 1px;
-  line-height: 0.10;
-  margin-top: 50%;
+    letter-spacing: 0.1rem;
 }
 
 .section-title2 {
@@ -139,18 +150,16 @@ img, picture {
     background-color: palevioletred;
     border-radius: 25px;
     bottom: 10px;
-    margin-top: -35px;
+    margin-top: -6px;
     box-shadow: 2.6px 2.5px 11px rgb(42, 19, 66);
     border-color: #ff00ee rgb(57,255,12) hwb(184 22% 1%) orangered;
-    
 }
 .section-title3 {
-     font-size: 30px;
+    font-size: 30px;
     font-weight: 350;
     color: #f40591;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-bottom: 0px;
 }
 
 .text_image_wrapper {
@@ -165,6 +174,13 @@ img, picture {
     text-align: center;
     gap: 20px;
     display: grid;
+}
+
+.credit{
+  color: #f40591;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 1232px) {
@@ -221,5 +237,11 @@ img, picture {
     .text_image_wrapper_2>.image_organize_wrapper_2 {
         grid-column: 1;
     }
+
+    .credits{
+        text-align: left;
+        margin: 0;
+    }
 }
+
 }

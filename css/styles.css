@@ -113,14 +113,16 @@ a:hover, a:focus {
   bottom: 0;
   transition: 0.5s;
   align-items: center;
-
   text-decoration: none;
+  padding: 5px 20px 3px 15px;
 }
 
-li  {
-  display: inline-block;
+
+#btm li{
+  padding-right: 35px;
+  width: 3px;
+  display: inline;
   line-height: 70px;
-  width: 8%;
 }
 /*End of navigation styling*/
 

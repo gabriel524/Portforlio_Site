@@ -198,7 +198,6 @@ margin: 0%;
     color: #F8F8FF;
     text-transform: capitalize;
     text-size-adjust: 2px;
-    font-style: italic;
     text-align: left;
 }
 #about {
@@ -246,6 +245,7 @@ margin: 0%;
   font-family: inherit;
   color: #00e1ff;
   padding: 10px;
+  padding-right: px;
   background-color: #474973;
   margin: 5px;
   border-radius: 20px;
@@ -436,13 +436,15 @@ th, td {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
+  padding-left: 18px;
 }
 
 .article  {
   max-width: 700px;
   margin: auto;
   text-align: right;
-  padding-right: 138px;  
+  padding-right: 13em;
+  align-content: center; 
 }
 
 .text {

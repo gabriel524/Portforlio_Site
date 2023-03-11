@@ -199,6 +199,7 @@ margin: 0%;
     text-transform: capitalize;
     text-size-adjust: 2px;
     text-align: left;
+    padding-left: 320px;
 }
 #about {
   background-color: #199eea;
@@ -837,6 +838,31 @@ a.active,a:hover {
   #about .col-right h1 {
     text-align: left;
   }
+
+}
+
+@media all and  (width: 500px){
+  .article {
+    
+  }
+
+  .ptex{
+    
+  }
+  .skt-content {
+    
+  }
+  .ptex{
+  padding: auto;
+  display: inline-block;
+  padding-left: 20px;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -90px;
+  padding-top: 90px;
+    /* display: flex; */
+}
 }
 
 @media screen and (min-width : 320px) and (max-width: 1200px) {

@@ -199,6 +199,7 @@ margin: 0%;
     text-transform: capitalize;
     text-size-adjust: 2px;
     text-align: left;
+    padding-left: 308px;
 }
 #about {
   background-color: #199eea;
@@ -837,6 +838,27 @@ a.active,a:hover {
   #about .col-right h1 {
     text-align: left;
   }
+
+}
+
+@media all and (min-width: 300px), (max-width: 400px){
+  .article {
+    
+  }
+
+  .ptex{
+    
+  }
+  .skt-content {
+    
+  }
+  .ptex{
+  padding: auto;
+  font-display: inline;
+
+  
+}
+
 }
 
 @media screen and (min-width : 320px) and (max-width: 1200px) {

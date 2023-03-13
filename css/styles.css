@@ -22,6 +22,7 @@
   --font-size-body-small-screen: 12px;
   --font-color: #555;
   --font-hover-color:orange;
+  --background-black: #191a1a;
 
 }
 
@@ -115,6 +116,7 @@ a:hover, a:focus {
   align-items: center;
   text-decoration: none;
   padding: 5px 20px 3px 15px;
+  z-index: 1;
 }
 
 
@@ -128,6 +130,19 @@ a:hover, a:focus {
 
 /*logo styling*/
 .logo {
+  color:hsl(240, 75%, 2%);
+  justify-content: center;
+  top: 0px;
+  bottom: 2px;
+  font-size: 45px;
+  border-top: 110px;
+  border-bottom: 110px;
+  background-color:#00fffb;
+  margin: 10 0px;
+  position: absolute;
+  float: left;
+}
+.logo .bwt >a {
   color:hsl(240, 75%, 2%);
   justify-content: center;
   top: 6px;
@@ -144,6 +159,8 @@ a:hover, a:focus {
   position: absolute;
   float: left;
 }
+
+
 /*End of logo styling*/
 
 /*styleing profile*/
@@ -173,6 +190,7 @@ a:hover, a:focus {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 3rem;
+  padding-left: 319px;
 }
 .section-title span {
   color: #fff;
@@ -196,7 +214,6 @@ margin: 0%;
 
 .ptex {
     color: #F8F8FF;
-    text-transform: capitalize;
     text-size-adjust: 2px;
     text-align: left;
     padding-left: 320px;
@@ -223,7 +240,7 @@ margin: 0%;
 }
 
 /* #### START OF Button styling #### */
-.button {
+.button{
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -299,6 +316,7 @@ textarea {
   text-shadow: transparent;
   font-style: #00e1ff;
   font-style:italic;
+  padding-left: 319px;
 }
 
 .skt-content h1 {
@@ -444,7 +462,7 @@ th, td {
   max-width: 700px;
   margin: auto;
   text-align: right;
-  padding-right: 105px;
+  padding-right: 117px;
   align-content: center; 
 }
 
@@ -590,7 +608,7 @@ a.active,a:hover {
 /* mani footer styling */
 #footer {
   background-color: #161b33;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   width: 100%;
   clear: both;
 }
